@@ -23,30 +23,30 @@
 
 
 // 3
-#include <stdio.h>
-
-int main() {
-    printf("// 3: output\n\n");
-    float celsius, fahrenheit;
-    int a;
-
-    printf("Enter '1' to convert celsius to fahrenheit and '2' to convert fahrenheit to celsius: ");
-    scanf("%d", &a);
-
-    if (a == 1) {
-        printf("Enter the value in celsius: ");
-        scanf("%f", &celsius);
-        fahrenheit = (celsius * 1.8) + 32;
-        printf("%.2f celsius in fahrenheit is %.2f", celsius, fahrenheit);
-    } else if (a == 2) {
-        printf("Enter the value in fahrenheit: ");
-        scanf("%f", &fahrenheit);
-        celsius = (fahrenheit - 32) * 5/9;
-        printf("%.2f Fahrenheit in Celsius is %.2f", fahrenheit, celsius);
-    }
-
-    return 0;
-}
+//#include <stdio.h>
+//
+//int main() {
+//    printf("// 3: output\n\n");
+//    float celsius, fahrenheit;
+//    int a;
+//
+//    printf("Enter '1' to convert celsius to fahrenheit and '2' to convert fahrenheit to celsius: ");
+//    scanf("%d", &a);
+//
+//    if (a == 1) {
+//        printf("Enter the value in celsius: ");
+//        scanf("%f", &celsius);
+//        fahrenheit = (celsius * 1.8) + 32;
+//        printf("%.2f celsius in fahrenheit is %.2f", celsius, fahrenheit);
+//    } else if (a == 2) {
+//        printf("Enter the value in fahrenheit: ");
+//        scanf("%f", &fahrenheit);
+//        celsius = (fahrenheit - 32) * 5/9;
+//        printf("%.2f Fahrenheit in Celsius is %.2f", fahrenheit, celsius);
+//    }
+//
+//    return 0;
+//}
 
 
 
@@ -305,7 +305,7 @@ int main() {
 
 //14. WAP to find largest number among three numbers using if statement only.
 //
-#include <stdio.h>
+//#include <stdio.h>
 
 //int main() {
 //	printf("// 14: output \n \n");
@@ -379,45 +379,49 @@ int main() {
 
 //16.WAP using switch statement to develop a simple calculator for +, -, *, /, and % operators.
 
-//#include <stdio.h>
+#include <stdio.h>
 //
-//int main(){
-//	int a, b, output;
-//	char oper;
-//
-//	printf("// 16: output \n \n");
-//printf("Enter the operator (+,-,*,/)= ");
-//scanf("%c", &oper);
-//
-//printf("Enter two opearands ");
-//scanf("%d %d",&a , &b);
-//
-//switch(oper)
-//{
-//case '+':
-//	output = a + b;
-//	printf("The sum is %d", output);
-//	break;
-// 
-//case '-':
-//	output = a - b;
-//	printf("The difference is %d", output);
-//	break;
-//
-//case '*':
-//	output = a*b;
-//	printf("The product is %d", output);
-//	break;
-//
-//case '/':
-//	output = a/b;
-//	printf("The division is %d", output);
-//	break;
-//	
-//}
-//
-//return 0;
-//}
+int main(){
+	int a, b, output;
+	char oper;
+
+	printf("// 16: output \n \n");
+printf("Enter the operator (+,-,*,/,%)= ");
+scanf("%c", &oper);
+
+printf("Enter two opearands ");
+scanf("%d %d",&a , &b);
+
+switch(oper)
+{
+case '+':
+	output = a + b;
+	printf("%d + %d = %d", output);
+	break;
+ 
+case '-':
+	output = a - b;
+	printf("%d - %d = %d", a, b, output);
+	break;
+
+case '*':
+	output = a*b;
+	printf("%a * b =  %d", output);
+	break;
+
+case '/':
+	output = a % b;
+	printf("%d % %d = %d", a, b, output);
+	break;
+
+case '%':
+	output = a % b;
+	printf("%d % %d = %d", a, b, output);
+	break;
+}
+
+return 0;
+}
 
 
 //17.WAP to print 1 to 5.

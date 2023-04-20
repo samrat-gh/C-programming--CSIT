@@ -24,30 +24,30 @@
 
 // 3
 #include <stdio.h>
-int main(){
-	printf("// 3: output \n \n");
-	float celsius, fahrenheit;
-	int a;
-	
-	printf("Enter '1' to convert celsius to fahrenheit and '2' to convert fahrenheit to celsius: ");
-	scanf("%d", &a);
-	
-	if(a == 1){
-		printf("Enter the value in celsius: ");
-		scanf("%.2f", &celsius);
-	fahrenheit = (celsius * 1.8) + 32;
-	printf("%.2f celsius in fahrenheit is %.2f", celsius, fahrenheit);
-	}
-	else if(a == 2) {
-		printf("Enter the value in fahrenheit: ");
-		scanf("%.2f", &fahrenheit);
-	celsius =  (fahrenheit - 32) * 0.56;
-	printf("%.2f Fahrenheit in Celsius is %.2f", fahrenheit, celsius);
-	}
-	
-	
-	return 0;
+
+int main() {
+    printf("// 3: output\n\n");
+    float celsius, fahrenheit;
+    int a;
+
+    printf("Enter '1' to convert celsius to fahrenheit and '2' to convert fahrenheit to celsius: ");
+    scanf("%d", &a);
+
+    if (a == 1) {
+        printf("Enter the value in celsius: ");
+        scanf("%f", &celsius);
+        fahrenheit = (celsius * 1.8) + 32;
+        printf("%.2f celsius in fahrenheit is %.2f", celsius, fahrenheit);
+    } else if (a == 2) {
+        printf("Enter the value in fahrenheit: ");
+        scanf("%f", &fahrenheit);
+        celsius = (fahrenheit - 32) * 5/9;
+        printf("%.2f Fahrenheit in Celsius is %.2f", fahrenheit, celsius);
+    }
+
+    return 0;
 }
+
 
 
 

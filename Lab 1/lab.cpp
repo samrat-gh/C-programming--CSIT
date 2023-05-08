@@ -83,7 +83,7 @@
 //   diameter =  2*r;
 //   circumference = 2*pi*r;
 //   area = 2*pi*r*r;
-//   printf("Let us take the radius is 7cm \n");
+//   printf("Let us take the radius is 7.5cm \n");
 //   printf("The diameter of circle is %.2fcm \n", diameter);
 //   printf("The circumference of circle is %.2fcm \n", circumference);
 //   printf("The area of circle of circle is %.2fcm^2 \n", area);
@@ -189,11 +189,11 @@
 //	printf("No tax is imposed");
 //}
 //else if(salary >= 30000 && salary <= 650000) {
-//	printf("1% tax is imposed i.e %.2f", (salary)/100);
+//	printf("1%% tax is imposed i.e %.2f", (salary)/100);
 //}
 //
 //else if(salary > 650000){
-//	printf("5% tax is imposed i.e %.2f", (salary*5)/100);
+//	printf("5%% tax is imposed i.e %.2f", (salary*5)/100);
 //}
 //return 0;	
 //}
@@ -379,49 +379,49 @@
 
 //16.WAP using switch statement to develop a simple calculator for +, -, *, /, and % operators.
 
-#include <stdio.h>
+//#include <stdio.h>
 //
-int main(){
-	int a, b, output;
-	char oper;
-
-	printf("// 16: output \n \n");
-printf("Enter the operator (+,-,*,/,%)= ");
-scanf("%c", &oper);
-
-printf("Enter two opearands ");
-scanf("%d %d",&a , &b);
-
-switch(oper)
-{
-case '+':
-	output = a + b;
-	printf("%d + %d = %d", output);
-	break;
- 
-case '-':
-	output = a - b;
-	printf("%d - %d = %d", a, b, output);
-	break;
-
-case '*':
-	output = a*b;
-	printf("%a * b =  %d", output);
-	break;
-
-case '/':
-	output = a % b;
-	printf("%d % %d = %d", a, b, output);
-	break;
-
-case '%':
-	output = a % b;
-	printf("%d % %d = %d", a, b, output);
-	break;
-}
-
-return 0;
-}
+//int main(){
+//	int a, b, output;
+//	char oper;
+//
+//	printf("// 16: output \n \n");
+//printf("Enter the operator (+,-,*,/,%%)= ");
+//scanf("%c", &oper);
+//
+//printf("Enter two opearands ");
+//scanf("%d %d",&a , &b);
+//
+//switch(oper)
+//{
+//case '+':
+//	output = a + b;
+//	printf("%d + %d = %d",a, b, output);
+//	break;
+// 
+//case '-':
+//	output = a - b;
+//	printf("%d - %d = %d", a, b, output);
+//	break;
+//
+//case '*':
+//	output = a*b;
+//	printf("%a * b =  %d",a, b, output);
+//	break;
+//
+//case '/':
+//	output = a / b;
+//	printf("%d / %d = %d", a, b, output);
+//	break;
+//
+//case '%':
+//	output = a % b;
+//	printf("%d %% %d = %d", a, b, output);
+//	break;
+//}
+//
+//return 0;
+//}
 
 
 //17.WAP to print 1 to 5.
@@ -466,6 +466,45 @@ return 0;
 //a. To find area of circle
 //b. To check the given number is odd or even.
 //c. To find the sum of n numbers
+
+//#include <stdio.h>
+//#define pi 3.14
+//
+//int main() {
+//		
+//	printf("// 18: output \n \n");
+//	float r, area;
+//	printf("Enter the radius: ");
+//	scanf("%f", &r);
+//	
+//	area = pi*r*r;
+//	printf("The area of circle is %.2f \n \n", area);
+//	
+//	
+//	int num;
+//	printf("Enter the number: ");
+//	scanf("%d", &num);
+//	
+//	if(num % 2 == 0) {
+//		printf("The number is even");
+//	}
+//	else
+//	printf("The number is odd");
+//	
+//
+//	int n, i, sum = 0 ;
+//
+//	printf("\n\nEnter the number 'n': ");
+//	scanf("%d",&n);
+//	
+//	for(i=1; i<=n; i++) {
+//		sum = sum + i;
+//	}
+//	printf("The sum of first %d number is %d", n, sum);
+//	return 0;
+//}
+	
+	
 
 
 
@@ -578,7 +617,7 @@ return 0;
 //		a = a +2;
 //		i = i + 1; 
 //	}	
-//	printf("The sum of first %d odd numbers is %d", n, sum);
+//	printf("The sum of first %d even numbers is %d", n, sum);
 //	
 //	return 0;		
 //}
@@ -599,7 +638,7 @@ return 0;
 //		sum = sum + i*i;
 //		i = i + 1; 
 //	}	
-//	printf("The sum of first %d odd numbers is %d", n, sum);
+//	printf("The sum of square of first %d numbers is %d", n, sum);
 //	
 //	return 0;		
 //}
@@ -620,7 +659,7 @@ return 0;
 //		sum = sum + i*i*i;
 //		i = i + 1; 
 //	}	
-//	printf("The sum of first %d odd numbers is %d", n, sum);
+//	printf("The sum of cubes of first %d numbers is %d", n, sum);
 //	
 //	return 0;		
 //}
@@ -723,6 +762,7 @@ return 0;
 //	}
 //	
 //	printf("The sum of harmonic series upto %d is %.2f",n, sum);
+//return 0;
 //}
 
 
@@ -802,26 +842,29 @@ return 0;
 //33.WAP to find sum of the following series for the given value of a and n
 //a – a^2/2 + a^3/3 – a^4/4...up to n
 
-//#include<stdio.h>
-//#include<math.h>
-//int main() {
-//	int n, i;
-//	float x, sum=0;
-//	 	printf("// 33: output \n \n");
-//	printf("Enter the number of terms n: ");
-//	scanf("%d", &n);
-//	printf("Enter the value of x: ");
-//	scanf("%f", &x);
-//	for(i=1; i<=n; i++) {
-//		if(i%2==1) {
-//			sum += pow(x, i)/i;
-//		} else {
-//			sum -= pow(x, i);
-//		}
-//	}
-//	printf("The sum of the series is: %.3f", sum);
-//	return 0;
-//}
+#include<stdio.h>
+#include<math.h>
+int main() {
+	int n, i;
+	float a, sum=0;
+	 	printf("// 33: output \n \n");
+
+	printf("Enter the number of terms n: ");
+	scanf("%d", &n);
+
+	printf("Enter the value of a: ");
+	scanf("%f", &a);
+
+	for(i=1; i<=n; i++) {
+		if(i%2==1) {
+			sum += pow(a, i)/i;
+		} else {
+			sum -= pow(a, i)/i;
+		}
+	}
+	printf("The sum of the series is: %.3f", sum);
+	return 0;
+}
 
 
 

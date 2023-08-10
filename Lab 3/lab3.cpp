@@ -49,7 +49,7 @@
 //	sum = a + b;
 //	return sum;
 //}
-
+//
 
 //1.c  Arguments and no return value
 
@@ -74,7 +74,7 @@
 
 
 // 1.d Arguments and return value
-//
+
 //#include <stdio.h>
 // int calSum(int, int);
 // 
@@ -103,9 +103,8 @@
 //int calcFactorial(int);
 //
 //int main() {
-//	int factorial, num;
-//	
-//	printf("Enter the number :");
+//	int factorial, num;	
+//	printf("Enter the number: ");
 //	scanf("%d", &num);
 //	
 //	factorial = calcFactorial(num);
@@ -145,7 +144,7 @@
 //        return n * factorial(n - 1);
 //    }
 //}
-//
+
 
 
 //4. Write a program to calculate the sum of N natural numbers using recursive function.
@@ -181,7 +180,7 @@
 //
 //int main() {
 //	int x, y;
-//	
+//	    	
 //	printf("Enter the value of x and y: ");
 //	scanf("%d %d", &x, &y);
 //	
@@ -208,6 +207,7 @@
 //int fun(int [5]);
 //
 //int main() {
+//	
 //	int arr[5] = {5, 4, 3, 2, 1};
 //    fun(arr);
 //	return 0;
@@ -225,12 +225,13 @@
 	//b. passing multi-dimensional array as an argument to a function.
 	
 	
-//	
+	
 //#include <stdio.h>
 //
 //int fun(int [2][2]);
 //
 //int main() {
+//	
 //	int arr[2][2] = {1, 2, 3, 4};
 //	
 //	fun(arr);
@@ -264,11 +265,11 @@
 //a. Call by value (passing by value)
 
 //#include<stdio.h>
-//#include<conio.h>
 //
 //int change(int);
 //int main()
 //{
+//	
 //int a=15;
 //printf("Before calling function, a=%d\n",a);
 //change(a);

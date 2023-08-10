@@ -18,7 +18,7 @@ struct Pharma {
 
 int main() {
 	struct Pharma emp[3];
-	int m = 1, n = 5, count = 0, k = 0;
+	int m = 1, n = 2, count = 0, k = 0;
 	
 	for(int i = 0; i < m; i++) {
 		
@@ -30,7 +30,7 @@ int main() {
 		cin >> emp[i].depart[j].employeeid;
 		
 		if(count == 0) {
-		cout << "Enter Employee isHead: ";
+		cout << "Enter Employee isHead or not ( 1 or 0): ";
 		cin >> emp[i].depart[j].isHead; }
 		 else {
 		emp[i].depart[j].isHead = 0;	}

@@ -31,8 +31,10 @@
 //int main(){
 //    int i, num, n;
 //    
+//    
 //    printf("Enter the number of Elements 'N': ");
-//    scanf("%d", &n);
+//    scanf("%d", &n);5
+//    5
 //    
 //int arr[n];
 //    
@@ -42,7 +44,7 @@
 //		arr[i] = num;
 //	}    
 //	
-//	printf("\nEnter an element to search");
+//	printf("\nEnter an element to search: ");
 //	scanf("%d", &num);
 //    for(i=0; i<n; i++){
 //    	if(arr[i]==num){
@@ -69,7 +71,7 @@
 //    scanf("%d",&n);
 // 
 // int arr[n];
-//    printf("Enter elements in array : ");
+//    printf("Enter elements for array : ");
 //    for(i=0; i<n; i++)
 //    {
 //        scanf("%d",&arr[i]);
@@ -83,8 +85,8 @@
 //		   if(max<arr[i])
 //		    max=arr[i];       
 //    }
-//     printf("minimum of array is : %d",min);
-//     printf("\nmaximum of array is : %d",max);
+//     printf("\nminimum value from array is : %d",min);
+//     printf("\nmaximum value from array is : %d",max);
 //
 //
 //    return 0;
@@ -104,7 +106,7 @@
 //	
 //	int arr[n];
 //	
-//	printf("Enter elements \n");
+//	printf("Enter elements: \n");
 //	for(i=0; i<n; i++){
 //		scanf("%d", &arr[i]);
 //	}
@@ -120,9 +122,9 @@
 //		}
 //	}
 //	
-//	printf("\nsorted elements are \n");
+//	printf("\nsorted elements are: \n");
 //	for(i=0; i<n; i++){
-//		printf("%d \n", arr[i]);
+//		printf("%d \t", arr[i]);
 //	}
 //	return 0;
 //}
@@ -139,7 +141,6 @@
 //
 //int main(){
 //	int i, j, temp, n;
-//	
 //	printf("Enter the size of the array: ");
 //	scanf("%d", &n);
 //	
@@ -161,9 +162,9 @@
 //		}
 //	}
 //	
-//	printf("\nsorted elements are \n");
+//	printf("\nsorted elements are: \n");
 //	for(i=0; i<n; i++){
-//		printf("%d \n", arr[i]);
+//		printf("%d \t", arr[i]);
 //	}
 //	return 0;
 //}
@@ -177,7 +178,6 @@
 //
 //int main() {
 //	int i, j, k, n;
-//	
 //	printf("Enter the number of array elements: ");
 //	scanf("%d", &n);
 //	
@@ -200,7 +200,7 @@
 //	  }	
 //	}
 //	
-//	printf("The new array elements are: ");
+//	printf("The new array elements are: \n");
 //	for(i=0; i<n; i++){
 //		printf("%d \t", arr[i]);
 //	}
@@ -216,7 +216,7 @@
 //
 //int main() {
 //	int i, j, n, temp;
-//	
+//		  
 //	printf("Enter the number of array elements: ");
 //	scanf("%d", &n);
 //	
@@ -251,16 +251,17 @@
 //		}
 //	return 0;	
 //}
-//
+
 
 //8. write a program to read any 3x3 matrix and display it in appropriate format.
 
-//
+
 //#include<stdio.h>
 //
 //int main(){
 //	
 //int arr[3][3],i,j;
+//
 //
 //for(i=0;i<3;i++) {
 //for(j=0;j<3;j++){
@@ -318,6 +319,7 @@
 //
 //int main() {
 //	int arr[3][3], i, j, sum;
+//	
 //
 //for(i=0; i<3; i++) {
 //for(j=0; j<3; j++){
@@ -334,7 +336,7 @@
 //	}
 //}
 //
-//printf("The sum of its diagonal elements is %d", sum);
+//printf("\nThe sum of its diagonal elements is %d", sum);
 //
 //return 0;
 //}
@@ -378,7 +380,6 @@
 //#include<stdio.h>
 //
 //int main(){
-//	
 //int i, j,n, m, sum;
 //
 //printf("Enter the number of rows and columns: ");
@@ -498,10 +499,9 @@
 //#include <stdio.h>
 //
 //int main(){
-//	
 //int i, j, r1, c1, sum, r2, c2;
 //
-//printf("Please make sure no of rows of first matrix should be equal to number of columns of second matrix");
+//printf("Please make sure no of rows of first matrix should be equal to number of columns of second matrix \n\n");
 //
 //printf("Enter the number of rows and columns for first matrix: ");
 //scanf("%d %d", &r1, &c1);
@@ -555,7 +555,7 @@
 
 
 
-//16. Write a program to sort N numbers in ascending order.
+//16.Write a program to read N students name and display them in alphabetical order.
 
 
 //#include<stdio.h>
@@ -564,7 +564,7 @@
 //{
 //char name[100][15],temp[15];
 //int i,j,n;
-//printf("How many students are there\n");
+//printf("How many students are there: ");
 //scanf("%d",&n);
 //printf("Enter name of student\n");
 //for(i=0;i<n;i++)
@@ -595,10 +595,8 @@
 //17.Write program to read a line of text and count no of vowel, no of consonant, no of
 //digits and no of spaces.
 
-//Write program to read a line of text and count no of vowel, no of consonant, no of digits and no of
-//spaces.
+
 //#include<stdio.h>
-//#include<conio.h>
 //#include<string.h>
 //int main()
 //{
@@ -622,7 +620,7 @@
 //if(str[i]==32)
 //spaces++;
 //}
-//printf("vowels=%d\nconsonant=%d\ndigits=%d\nSpaces=%d",vowel,consonant,digits,spaces);
+//printf("\nvowels=%d\nconsonant=%d\ndigits=%d\nSpaces=%d",vowel,consonant,digits,spaces);
 //return 0;
 //}
 

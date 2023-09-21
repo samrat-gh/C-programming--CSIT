@@ -1,0 +1,1 @@
+This is a sample text file. Read every other 5 bytes of data.
